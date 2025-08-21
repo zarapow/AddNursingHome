@@ -22,19 +22,21 @@
     <a href="#contact">ติดต่อเรา</a>
   </nav>
 
-  <div class="hero">
-    <div class="hero-slider">
+
+  <div class="image">
+    <div class="image-slider">
       <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&q=80&w=1200" alt="ภาพศูนย์ดูแล 1" class="active">
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&q=80&w=1200" alt="ภาพศูนย์ดูแล 2">
       <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-4.0.3&q=80&w=1200" alt="ภาพศูนย์ดูแล 3">
-      <div class="hero-text">ยินดีต้อนรับสู่ศูนย์ดูแลผู้ป่วยและผู้สูงอายุของเรา</div>
-      <div class="hero-dots">
+      <div class="image-text">ยินดีต้อนรับสู่ศูนย์ดูแลผู้ป่วยและผู้สูงอายุของเรา</div>
+      <div class="image-dots">
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
     </div>
   </div>
+
 
   <section id="about">
     <h2>เกี่ยวกับเรา</h2>
@@ -75,15 +77,40 @@
 
     <h3>ฟอร์มติดต่อออนไลน์</h3>
     <form
-    action="https://formspree.io/f/xgvzjzae"
-    method="POST"
-    >
-      <input type="text" name="name" placeholder="ชื่อของคุณ" required>
-      <input type="email" name="email" placeholder="อีเมล" required>
-      <input type="date" name="visit_date" required placeholder="เลือกวันที่"> วันที่เยี่ยม
-      <input type="time" name="visit_time" required placeholder="เลือกเวลา"> เวลา
-      <textarea name="message" rows="4" placeholder="ข้อความ" required></textarea>
-      <input type="submit" value="ส่งข้อความ">
+      action="https://formspree.io/f/xgvzjzae"
+      method="POST">
+        <div class="input-name">
+          <span>ชื่อ-สกุล</span>
+          <input type="text" name="name" placeholder="ชื่อของคุณ" required>
+        </div>
+        <div class="input-phonenum">
+          <span>เบอร์โทรศัพท์</span>
+          <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
+        </div>
+
+        <div class="input-email">
+          <span>อีเมล</span>
+          <input type="email" name="email" placeholder="อีเมล" required>
+        </div>
+
+        <div class="input-date">
+          <span>วันที่เยี่ยม</span>
+          <input type="date" name="visit_date" required>
+        </div>
+
+        <div class="input-time">
+          <span>เวลาเยี่ยม</span>
+          <input type="time" name="visit_time" required>
+        </div>
+
+        <div class="input-message">
+          <span>ข้อความ</span>
+          <textarea name="message" rows="4" placeholder="ข้อความ" required></textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="ส่งข้อความ">
+        </div>
     </form>
 
     <h3>แผนที่ของเรา</h3>
@@ -96,10 +123,4 @@
   </footer>
 
 </body>
-
 </html>
-
-
-
-
-
