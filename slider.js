@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.hero-slider img');
-  const dots = document.querySelectorAll('.hero-dots .dot');
+  const images = document.querySelectorAll('.image-slider img');
+  const dots = document.querySelectorAll('.image-dots .dot');
   let current = 0;
   let timer;
 
@@ -26,5 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
       timer = setInterval(nextSlide, 5000);
     });
   });
-
 });
