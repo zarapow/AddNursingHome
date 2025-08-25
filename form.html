@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Nursing Home</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <script src="slider.js"></script>
+
+  <header>
+    <h1>Add Nursing Home</h1>
+    <p>อบอุ่น ปลอดภัย ดูแลด้วยใจ</p>
+  </header>
+
+  <nav>
+    <a href="homepage.html">เกี่ยวกับเรา</a>
+    <a href="#services">บริการ</a>
+    <a href="#facilities">สิ่งอำนวยความสะดวก</a>
+    <a href="form.html">ติดต่อเรา</a>
+  </nav> 
+
+  <section id="form">
+    <h2>ฟอร์มติดต่อออนไลน์</h2>
+    <form
+      action="https://formspree.io/f/xgvzjzae"
+      method="POST">
+        <label for="input-name">
+          <p>ชื่อ-สกุล *</p>
+          <input type="text" name="name" placeholder="ชื่อ" required>
+        </label>
+        <label for="input-phonenum">
+          <p>เบอร์โทรศัพท์ *</p>
+          <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
+        </label>
+
+        <label for="input-email">
+          <p>อีเมล *</p>
+          <input type="email" name="email" placeholder="อีเมล" required>
+        </label>
+
+        <label for="input-date">
+          <p>วันที่เยี่ยม *</p>
+          <input type="date" name="visit_date" required>
+        </label>
+
+        <label for="input-time">
+          <p>เวลาเยี่ยม *</p>
+          <input type="time" name="visit_time" required>
+        </label>
+
+        <label for="input-message">
+          <p>ข้อความ</p>
+          <textarea name="message" rows="4" placeholder="อายุ เพศ ปัญหาสุขภาพ สอบถามเรื่องบริการ"></textarea>
+        </label>
+
+        <label for="submit">
+          <input type="submit" value="ส่งฟอร์ม">
+        </label>
+    </form>
+  </section>
+
+    <footer>
+        <p>© 2025 ศูนย์ดูแลผู้ป่วยและผู้สูงอายุ | Designed with ❤️</p>
+    </footer>    
+</body>
+</html>
